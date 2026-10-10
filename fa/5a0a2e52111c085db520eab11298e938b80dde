@@ -1,0 +1,149 @@
+submissions/java-spring-boot-nb-99/nginx.conf
+  s_bf0fc3185f5c40::t_47e3779b9e8b15 16-17
+  s_bf0fc3185f5c40::t_b2e9153ff1dd88 1-15,18-30
+submissions/java-spring-boot-nb-99/benchmark-fixtures/threshold.events.jsonl
+  s_bf0fc3185f5c40::t_e64464c29d0fbb 1
+submissions/java-spring-boot-nb-99/pom.xml
+  s_bf0fc3185f5c40::t_b2e9153ff1dd88 1-67
+submissions/java-spring-boot-nb-99/src/main/java/challenge/FallbackController.java
+  s_bf0fc3185f5c40::t_c274b15125e16e 1-19
+submissions/java-spring-boot-nb-99/src/test/java/challenge/ApiTest.java
+  s_bf0fc3185f5c40::t_44e3b076429b74 5,21,28,42,229-233,245-250,285,287-292,296
+  s_bf0fc3185f5c40::t_eb66da26263fcd 299-308
+  s_bf0fc3185f5c40::t_47e3779b9e8b15 203,211,215-220,251-257,261-262,265-270,276,280-284
+  s_bf0fc3185f5c40::t_48504dd6563046 363-366
+  s_bf0fc3185f5c40::t_4681273de59cdc 56
+  s_bf0fc3185f5c40::t_36eb297f19cc9f 1-4,6-20,22-27,29-41,43-55,57-202,221-228,286,297-298,309-362,367-374
+  s_bf0fc3185f5c40::t_5bdfdda4d68846 234-244,293-295
+  s_bf0fc3185f5c40::t_60ed886e3d289c 204-210,212-214,258-260,263-264,271-275,277-279
+submissions/java-spring-boot-nb-99/start.sh
+  s_bf0fc3185f5c40::t_b2e9153ff1dd88 1-6
+submissions/java-spring-boot-nb-99/src/main/java/challenge/Application.java
+  s_bf0fc3185f5c40::t_22e57fe8131dd9 1-7,9-21,24-42
+  s_bf0fc3185f5c40::t_36eb297f19cc9f 8,22-23
+submissions/java-spring-boot-nb-99/test_benchmark.py
+  s_bf0fc3185f5c40::t_49fd93e3bed4dc 54-77,229-238,358-362,387-388,424,458-462,464,484,493-494,516,519-520,530-535,555-586
+  s_bf0fc3185f5c40::t_1ca7de03d9d489 1-2,6-7,10-27,30-42,97-220,222-228,239-271,275-357,363-365,587-590
+  s_bf0fc3185f5c40::t_918b2d2b09bffc 9,221
+  s_bf0fc3185f5c40::t_e64464c29d0fbb 88-91
+  s_bf0fc3185f5c40::t_27454a689d6808 469
+  s_bf0fc3185f5c40::t_f78f5c9728ccf5 8,272-274,389-390,435-446,467,536-554
+  s_bf0fc3185f5c40::t_182fdb484ef838 78-87,92-96
+  s_bf0fc3185f5c40::t_3b73dc95c19481 28-29,43-53,401,416-422
+  s_bf0fc3185f5c40::t_ef2e41861df799 3-5,366-384,391-400,402-415,423,426-434,447-457,463,465-466,468,470-483,485-492,495-515,517-518,521-529
+  s_bf0fc3185f5c40::t_32fed5d938d166 385-386,425
+submissions/java-spring-boot-nb-99/src/main/java/challenge/Responses.java
+  s_bf0fc3185f5c40::t_22e57fe8131dd9 1-21
+submissions/java-spring-boot-nb-99/src/main/java/challenge/FeedController.java
+  s_bf0fc3185f5c40::t_eb66da26263fcd 57-62
+  s_bf0fc3185f5c40::t_22e57fe8131dd9 1-56,63-99
+submissions/java-spring-boot-nb-99/maven-settings.xml.template
+  s_bf0fc3185f5c40::t_04b790ac3ddac6 1-12
+submissions/java-spring-boot-nb-99/src/main/resources/application.properties
+  s_bf0fc3185f5c40::t_22e57fe8131dd9 1-6
+submissions/java-spring-boot-nb-99/src/main/java/challenge/ErrorHandler.java
+  s_bf0fc3185f5c40::t_22e57fe8131dd9 1-30
+submissions/java-spring-boot-nb-99/.gitignore
+  s_bf0fc3185f5c40::t_22e57fe8131dd9 1-5
+  s_bf0fc3185f5c40::t_1ca7de03d9d489 6-7
+submissions/java-spring-boot-nb-99/OPTIMIZATIONS.md
+  s_bf0fc3185f5c40::t_7cf52549f6e4df 1-28,31-37
+  s_bf0fc3185f5c40::t_47e3779b9e8b15 29-30
+submissions/java-spring-boot-nb-99/src/main/java/challenge/Authentication.java
+  s_bf0fc3185f5c40::t_22e57fe8131dd9 1-90
+submissions/java-spring-boot-nb-99/benchmark-fixtures/threshold.js
+  s_bf0fc3185f5c40::t_e64464c29d0fbb 1-5
+submissions/java-spring-boot-nb-99/seed-local.sh
+  s_bf0fc3185f5c40::t_7cf52549f6e4df 5-8
+  s_bf0fc3185f5c40::t_b2e9153ff1dd88 1-4,9-10
+submissions/java-spring-boot-nb-99/compose.yaml
+  s_bf0fc3185f5c40::t_b2e9153ff1dd88 1-16,21-31,33-39,41-47,49-56,60-65
+  s_bf0fc3185f5c40::t_251a1b09d539be 17
+  s_bf0fc3185f5c40::t_200845565d25ea 48
+  s_bf0fc3185f5c40::t_c274b15125e16e 32,57-59
+  s_bf0fc3185f5c40::t_95799c9914d9cb 18-20
+  s_bf0fc3185f5c40::t_04b790ac3ddac6 40
+submissions/java-spring-boot-nb-99/build.sh
+  s_bf0fc3185f5c40::t_48504dd6563046 4-5
+  s_bf0fc3185f5c40::t_b2e9153ff1dd88 1-3,6-7
+submissions/java-spring-boot-nb-99/benchmark.py
+  s_bf0fc3185f5c40::t_733d20ba62fce7 16,39-43,171-172,188-193,470-476,541-544
+  s_bf0fc3185f5c40::t_1ca7de03d9d489 160
+  s_bf0fc3185f5c40::t_2225295e0e21b6 418-425
+  s_bf0fc3185f5c40::t_918b2d2b09bffc 19,167,176,180-184
+  s_bf0fc3185f5c40::t_32fed5d938d166 165,187,197,507-516,519-539,547
+  s_bf0fc3185f5c40::t_3faee0339ed032 8
+  s_bf0fc3185f5c40::t_182fdb484ef838 6,121-136,451-453,484
+  s_bf0fc3185f5c40::t_58e341062f5515 448-449,457-460,501-505,551-556,572,599-606,639-642,665-666,668-672,705-707
+  s_bf0fc3185f5c40::t_1504ea530428e5 1-5,7,9-15,17-18,20-24,26-38,44-62,64-71,82-108,110-120,137-159,161-164,166,177-179,186,194-196,198-208,210-211,230-243,245-260,276-302,304-306,308-377,383-404,409,411-417,426-447,450,454-456,461-469,477-483,485-500,506,549,558-571,573-580,587-590,595-598,607-638,643-653,664,673-674,678-687,708,711-720,723-731
+  s_bf0fc3185f5c40::t_283d20cc8b4aa8 209,212-229,581-586,591-594,654-663
+  s_bf0fc3185f5c40::t_680d5177c144ca 25,667
+  s_bf0fc3185f5c40::t_03296c06318c80 168-170,173-175,185,244,261-275,303,307,378-382,405-408,410
+  s_bf0fc3185f5c40::t_161bfe656b9125 517-518,540,545-546,548,550,557,675-677,688-704,709-710,721-722
+  s_bf0fc3185f5c40::t_f34163e69065d7 63,72-81,109
+submissions/java-spring-boot-nb-99/src/main/java/challenge/ApiException.java
+  s_bf0fc3185f5c40::t_22e57fe8131dd9 1-10
+submissions/java-spring-boot-nb-99/Dockerfile
+  s_bf0fc3185f5c40::t_b2e9153ff1dd88 2-7,14-15,17-21,23-34,36-44
+  s_bf0fc3185f5c40::t_04b790ac3ddac6 1,11-13,22,35
+  s_bf0fc3185f5c40::t_95799c9914d9cb 8-10
+  s_bf0fc3185f5c40::t_48504dd6563046 16
+submissions/java-spring-boot-nb-99/README.md
+  s_bf0fc3185f5c40::t_7cf52549f6e4df 1-34,37-62,205-221,224,226-236,240-245
+  s_bf0fc3185f5c40::t_f20eaa4a1aac95 81-82,85-92,100-102,105-120,123,127-149,154-159,163-168,175-178,185-186,189-201,204
+  s_bf0fc3185f5c40::t_f78f5c9728ccf5 124-126,160-162,202-203
+  s_bf0fc3185f5c40::t_eb66da26263fcd 237-239
+  s_bf0fc3185f5c40::t_7c203cb043a04f 246-253
+  s_bf0fc3185f5c40::t_47e3779b9e8b15 64,67-68,222-223,225
+  s_bf0fc3185f5c40::t_bc7242d7dbc23a 35-36
+  s_bf0fc3185f5c40::t_95799c9914d9cb 65-66
+  s_bf0fc3185f5c40::t_251a1b09d539be 63,69
+  s_bf0fc3185f5c40::t_9bf765c98f9f26 70-80
+  s_bf0fc3185f5c40::t_27454a689d6808 83-84
+  s_bf0fc3185f5c40::t_7b3be194dc8ec8 93-99,103-104,121-122,150-153,169-174,179-184,187-188
+submissions/java-spring-boot-nb-99/install.sh
+  s_bf0fc3185f5c40::t_04b790ac3ddac6 12,23
+  s_bf0fc3185f5c40::t_7cf52549f6e4df 11,19,22,30
+  s_bf0fc3185f5c40::t_b2e9153ff1dd88 1-10,13-16,18,20-21,25-27,29,31
+  s_bf0fc3185f5c40::t_df0060f457abf0 24
+  s_bf0fc3185f5c40::t_48504dd6563046 17,28
+submissions/java-spring-boot-nb-99/src/main/java/challenge/PostRepository.java
+  s_bf0fc3185f5c40::t_56b4dd5debdb1a 10
+  s_41000c6ea29ada::t_359cd5991531cd 42,65-68
+  s_bf0fc3185f5c40::t_22e57fe8131dd9 1-9,11-41,43-64,69-79
+submissions/java-spring-boot-nb-99/benchmark_report.py
+  s_bf0fc3185f5c40::t_a37e151efb8270 57,66,102-107,111-116,119,126,214,285-287,304
+  s_bf0fc3185f5c40::t_321fdfa146929c 1-56,59,61-65,67-73,75-101,108,118,120-125,127-197,227-228,230,232,234-252,258,260-263,268-269,274-284,288-303,305-329
+  s_bf0fc3185f5c40::t_f20eaa4a1aac95 109-110,117
+  s_bf0fc3185f5c40::t_f78f5c9728ccf5 58,60
+  s_bf0fc3185f5c40::t_283d20cc8b4aa8 74
+  s_bf0fc3185f5c40::t_e8e0b21a3f2698 198-213,215-226,229,231,233,253-257,259,264-267,270-273
+submissions/java-spring-boot-nb-99/Dockerfile.dockerignore
+  s_bf0fc3185f5c40::t_f84e2c350e3bda 1-3,5-9,11-14
+  s_bf0fc3185f5c40::t_1ca7de03d9d489 15-16
+  s_bf0fc3185f5c40::t_dcb2de02500ff9 4,10,17-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "fa5a0a2e52111c085db520eab11298e938b80dde",
+  "prompts": {},
+  "sessions": {
+    "s_41000c6ea29ada": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ee92a3444ffeo3AFGYt2yVSsd6",
+        "model": "github-copilot/claude-opus-5.5"
+      },
+      "human_author": "nb99 <niklas@beilmann.dev>"
+    },
+    "s_bf0fc3185f5c40": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ee9329146ffexUiArgNTuaI5dj",
+        "model": "github-copilot/gpt-6.1-sol"
+      },
+      "human_author": "nb99 <niklas@beilmann.dev>"
+    }
+  }
+}
