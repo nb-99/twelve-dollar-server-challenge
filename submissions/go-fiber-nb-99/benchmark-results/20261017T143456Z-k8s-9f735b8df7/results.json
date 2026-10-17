@@ -1,0 +1,534 @@
+{
+  "status": "completed",
+  "runs": [
+    {
+      "id": 1,
+      "phase": "warmup",
+      "vus": 1000,
+      "hold_seconds": 120,
+      "started_at": "2026-10-17T14:34:57+00:00",
+      "status": "passed",
+      "log": "run-001.log",
+      "exit_code": [
+        0,
+        0,
+        0
+      ],
+      "events": [
+        "k6/run-001.instance-0.events.jsonl",
+        "k6/run-001.instance-1.events.jsonl",
+        "k6/run-001.instance-2.events.jsonl"
+      ],
+      "summary": [
+        "k6/run-001.instance-0.json",
+        "k6/run-001.instance-1.json",
+        "k6/run-001.instance-2.json"
+      ],
+      "reached_vus": 1000,
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 8437,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 8437,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 1242,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 147,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 18263,
+        "rps": 83.02456161629489,
+        "avg_ms": 0.6261136007227739,
+        "p95_ms": 0.9229133499999997,
+        "p99_ms": 1.5758097000000115,
+        "max_ms": 12.059614,
+        "error_percent": 0.0,
+        "failed_requests": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 106,
+        "cpu_percent": 3.648461353981469,
+        "peak_memory_mib": 50.85546875,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-001.cpu.pb.gz",
+      "heap_profile": "pprof/run-001.heap.pb.gz",
+      "wall_seconds": 221.1888170830207
+    },
+    {
+      "id": 2,
+      "phase": "search",
+      "vus": 60000,
+      "hold_seconds": 60,
+      "started_at": "2026-10-17T14:39:41+00:00",
+      "status": "passed",
+      "log": "run-002.log",
+      "exit_code": [
+        0,
+        0,
+        0
+      ],
+      "events": [
+        "k6/run-002.instance-0.events.jsonl",
+        "k6/run-002.instance-1.events.jsonl",
+        "k6/run-002.instance-2.events.jsonl"
+      ],
+      "summary": [
+        "k6/run-002.instance-0.json",
+        "k6/run-002.instance-1.json",
+        "k6/run-002.instance-2.json"
+      ],
+      "reached_vus": 60000,
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 330769,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 330769,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 49276,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 6564,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 717378,
+        "rps": 4482.748110323884,
+        "avg_ms": 3.3848523626331,
+        "p95_ms": 16.818916999999928,
+        "p99_ms": 56.77996602999998,
+        "max_ms": 284.74839,
+        "error_percent": 0.0,
+        "failed_requests": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 78,
+        "cpu_percent": 69.79973455557509,
+        "peak_memory_mib": 1593.17578125,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-002.cpu.pb.gz",
+      "heap_profile": "pprof/run-002.heap.pb.gz",
+      "wall_seconds": 165.04470895801205
+    },
+    {
+      "id": 3,
+      "phase": "search",
+      "vus": 80000,
+      "hold_seconds": 60,
+      "started_at": "2026-10-17T14:43:28+00:00",
+      "status": "passed",
+      "log": "run-003.log",
+      "exit_code": [
+        0,
+        0,
+        0
+      ],
+      "events": [
+        "k6/run-003.instance-0.events.jsonl",
+        "k6/run-003.instance-1.events.jsonl",
+        "k6/run-003.instance-2.events.jsonl"
+      ],
+      "summary": [
+        "k6/run-003.instance-0.json",
+        "k6/run-003.instance-1.json",
+        "k6/run-003.instance-2.json"
+      ],
+      "reached_vus": 80000,
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 438832,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 438832,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 65096,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 8679,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 951439,
+        "rps": 5944.806742449211,
+        "avg_ms": 44.66675499826528,
+        "p95_ms": 247.550522,
+        "p99_ms": 664.7021983999963,
+        "max_ms": 3280.591627,
+        "error_percent": 0.0,
+        "failed_requests": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 77,
+        "cpu_percent": 78.9844251223646,
+        "peak_memory_mib": 1831.51953125,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-003.cpu.pb.gz",
+      "heap_profile": "pprof/run-003.heap.pb.gz",
+      "wall_seconds": 166.49707762501203
+    },
+    {
+      "id": 4,
+      "phase": "confirm",
+      "vus": 80000,
+      "hold_seconds": 300,
+      "started_at": "2026-10-17T14:47:18+00:00",
+      "status": "threshold failed",
+      "log": "run-004.log",
+      "exit_code": [
+        99,
+        99,
+        99
+      ],
+      "events": [
+        "k6/run-004.instance-0.events.jsonl",
+        "k6/run-004.instance-1.events.jsonl",
+        "k6/run-004.instance-2.events.jsonl"
+      ],
+      "summary": [
+        "k6/run-004.instance-0.json",
+        "k6/run-004.instance-1.json",
+        "k6/run-004.instance-2.json"
+      ],
+      "reached_vus": 80000,
+      "thresholds": {
+        "p(95)<500": false,
+        "p(99)<1000": false,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 1364249,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 1364249,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 204360,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 27233,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 2960091,
+        "rps": 7399.347625000085,
+        "avg_ms": 93.29173007682657,
+        "p95_ms": 507.4356021999995,
+        "p99_ms": 1276.3252900000014,
+        "max_ms": 5615.44324,
+        "error_percent": 0.0,
+        "failed_requests": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 185,
+        "cpu_percent": 90.96498303118453,
+        "peak_memory_mib": 1847.3125,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-004.cpu.pb.gz",
+      "heap_profile": "pprof/run-004.heap.pb.gz",
+      "wall_seconds": 406.7037398329703
+    },
+    {
+      "id": 5,
+      "phase": "confirm",
+      "vus": 79750,
+      "hold_seconds": 300,
+      "started_at": "2026-10-17T14:55:07+00:00",
+      "status": "threshold failed",
+      "log": "run-005.log",
+      "exit_code": [
+        99,
+        99,
+        99
+      ],
+      "events": [
+        "k6/run-005.instance-0.events.jsonl",
+        "k6/run-005.instance-1.events.jsonl",
+        "k6/run-005.instance-2.events.jsonl"
+      ],
+      "summary": [
+        "k6/run-005.instance-0.json",
+        "k6/run-005.instance-1.json",
+        "k6/run-005.instance-2.json"
+      ],
+      "reached_vus": 79750,
+      "thresholds": {
+        "p(95)<500": false,
+        "p(99)<1000": false,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 1329708,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 1329708,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 198873,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 26354,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 2884643,
+        "rps": 7210.752299332287,
+        "avg_ms": 313.22491091152403,
+        "p95_ms": 1687.6994097499983,
+        "p99_ms": 4239.510684919999,
+        "max_ms": 23020.059232,
+        "error_percent": 0.0,
+        "failed_requests": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 184,
+        "cpu_percent": 90.85169911516772,
+        "peak_memory_mib": 1865.58984375,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-005.cpu.pb.gz",
+      "heap_profile": "pprof/run-005.heap.pb.gz",
+      "wall_seconds": 406.6770564579638
+    },
+    {
+      "id": 6,
+      "phase": "confirm",
+      "vus": 79500,
+      "hold_seconds": 300,
+      "started_at": "2026-10-17T15:02:57+00:00",
+      "status": "threshold failed",
+      "log": "run-006.log",
+      "exit_code": [
+        99,
+        99,
+        99
+      ],
+      "events": [
+        "k6/run-006.instance-0.events.jsonl",
+        "k6/run-006.instance-1.events.jsonl",
+        "k6/run-006.instance-2.events.jsonl"
+      ],
+      "summary": [
+        "k6/run-006.instance-0.json",
+        "k6/run-006.instance-1.json",
+        "k6/run-006.instance-2.json"
+      ],
+      "reached_vus": 79500,
+      "thresholds": {
+        "p(95)<500": false,
+        "p(99)<1000": false,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 1349453,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 1349452,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 202266,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 26712,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 2927883,
+        "rps": 7318.910351743866,
+        "avg_ms": 145.53823375057397,
+        "p95_ms": 781.3376558,
+        "p99_ms": 2181.8115726400006,
+        "max_ms": 10711.931382,
+        "error_percent": 0.0,
+        "failed_requests": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 185,
+        "cpu_percent": 90.99403235044797,
+        "peak_memory_mib": 1877.48828125,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-006.cpu.pb.gz",
+      "heap_profile": "pprof/run-006.heap.pb.gz",
+      "wall_seconds": 406.4861247088993
+    },
+    {
+      "id": 7,
+      "phase": "confirm",
+      "vus": 79250,
+      "hold_seconds": 300,
+      "started_at": "2026-10-17T15:10:46+00:00",
+      "status": "passed",
+      "log": "run-007.log",
+      "exit_code": [
+        0,
+        0,
+        0
+      ],
+      "events": [
+        "k6/run-007.instance-0.events.jsonl",
+        "k6/run-007.instance-1.events.jsonl",
+        "k6/run-007.instance-2.events.jsonl"
+      ],
+      "summary": [
+        "k6/run-007.instance-0.json",
+        "k6/run-007.instance-1.json",
+        "k6/run-007.instance-2.json"
+      ],
+      "reached_vus": 79250,
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 1356910,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 1356910,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 202826,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 27107,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 2943753,
+        "rps": 7358.59918286541,
+        "avg_ms": 52.61757520980113,
+        "p95_ms": 307.17989544999875,
+        "p99_ms": 880.0865460399999,
+        "max_ms": 4260.305074,
+        "error_percent": 0.0,
+        "failed_requests": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 186,
+        "cpu_percent": 90.52272760222328,
+        "peak_memory_mib": 1883.125,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-007.cpu.pb.gz",
+      "heap_profile": "pprof/run-007.heap.pb.gz",
+      "wall_seconds": 406.3771136669675
+    }
+  ],
+  "confirmed_vus": 79250,
+  "environment": {
+    "mode": "k8s",
+    "url": "http://127.0.0.1:54625",
+    "k6_url": "http://server",
+    "k6": "k6 v2.2.0 (commit/00a9a1b7f5, go1.26.5, linux/amd64)",
+    "k6_instances": 3,
+    "app_probe": "container cgroup CPU, memory.current including page cache, and OOM kills",
+    "host": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "host_logical_cpus": 14,
+    "workload_sha256": "14fbbe36a7bef2cc803c8c2309b8b93d6e6ec9c2b6aba78ebe3b9a95ebf85972",
+    "settings": {
+      "url": "http://127.0.0.1:54625",
+      "tokens": null,
+      "mode": "k8s",
+      "k6": "exec",
+      "k6_bin": "k6",
+      "k6_exec": [
+        "kubectl --context admin@coruscant -n twelve-dollar-go exec k6-0 -c k6 --",
+        "kubectl --context admin@coruscant -n twelve-dollar-go exec k6-1 -c k6 --",
+        "kubectl --context admin@coruscant -n twelve-dollar-go exec k6-2 -c k6 --"
+      ],
+      "k6_url": "http://server",
+      "docker_network": null,
+      "app_pid": null,
+      "app_exec": [
+        "kubectl --context admin@coruscant -n twelve-dollar-go exec server -c app --"
+      ],
+      "app_limits": {
+        "cpu": "1",
+        "memory": "2Gi"
+      },
+      "pprof": "127.0.0.1:6060",
+      "pprof_exec": "kubectl --context admin@coruscant -n twelve-dollar-go exec server -c app --",
+      "output": null,
+      "wait_seconds": 120,
+      "warmup_vus": 1000,
+      "warmup_seconds": 120,
+      "start_vus": 60000,
+      "max_vus": 80000,
+      "step": 250,
+      "probe_seconds": 60,
+      "confirm_seconds": 300,
+      "confirm_runs": 1,
+      "ramp_seconds": 60,
+      "budget_seconds": 7200
+    },
+    "app_limits": {
+      "cpu": "1",
+      "memory": "2Gi"
+    }
+  },
+  "message": "Search and confirmation finished."
+}

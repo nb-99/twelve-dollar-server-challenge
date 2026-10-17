@@ -1,0 +1,82 @@
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✓ 'p(95)<500' p(95)=897.17µs
+    ✓ 'p(99)<1000' p(99)=1.37ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 9080    41.300712/s
+    checks_succeeded...: 100.00% 9080 out of 9080
+    checks_failed......: 0.00%   0 out of 9080
+
+    ✓ feed 200
+    ✓ post 200
+    ✓ like 200/201
+    ✓ create 201
+
+    HTTP
+    http_req_duration..............: avg=642.9µs med=615.19µs p(95)=897.17µs p(99)=1.37ms max=15.25ms
+      { expected_response:true }...: avg=642.9µs med=615.19µs p(95)=897.17µs p(99)=1.37ms max=15.25ms
+    http_req_failed................: 0.00%  0 out of 9080
+    http_reqs......................: 9080   41.300712/s
+
+    EXECUTION
+    iteration_duration.............: avg=20.77s  med=20.73s   p(95)=26.71s   p(99)=28.68s max=32.51s 
+    iterations.....................: 3964   18.030399/s
+    vus............................: 6      min=6         max=500
+    vus_max........................: 500    min=500       max=500
+
+    NETWORK
+    data_received..................: 18 MB  81 kB/s
+    data_sent......................: 824 kB 3.7 kB/s
+
+
+
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✓ 'p(95)<500' p(95)=830.24µs
+    ✓ 'p(99)<1000' p(99)=1.31ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 9154    41.608857/s
+    checks_succeeded...: 100.00% 9154 out of 9154
+    checks_failed......: 0.00%   0 out of 9154
+
+    ✓ feed 200
+    ✓ post 200
+    ✓ like 200/201
+    ✓ create 201
+
+    HTTP
+    http_req_duration..............: avg=595.23µs med=560.93µs p(95)=830.24µs p(99)=1.31ms max=21.05ms
+      { expected_response:true }...: avg=595.23µs med=560.93µs p(95)=830.24µs p(99)=1.31ms max=21.05ms
+    http_req_failed................: 0.00%  0 out of 9154
+    http_reqs......................: 9154   41.608857/s
+
+    EXECUTION
+    iteration_duration.............: avg=20.79s   med=20.73s   p(95)=26.52s   p(99)=28.66s max=32.78s 
+    iterations.....................: 3944   17.927172/s
+    vus............................: 1      min=1         max=500
+    vus_max........................: 500    min=500       max=500
+
+    NETWORK
+    data_received..................: 18 MB  81 kB/s
+    data_sent......................: 842 kB 3.8 kB/s
+
+
+

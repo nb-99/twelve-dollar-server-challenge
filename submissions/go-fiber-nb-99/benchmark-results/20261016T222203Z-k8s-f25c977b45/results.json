@@ -1,0 +1,647 @@
+{
+  "status": "completed",
+  "runs": [
+    {
+      "id": 1,
+      "phase": "warmup",
+      "vus": 1000,
+      "hold_seconds": 120,
+      "started_at": "2026-10-16T22:22:03+00:00",
+      "status": "passed",
+      "log": "run-001.log",
+      "exit_code": 0,
+      "events": "k6/run-001.events.jsonl",
+      "summary": "k6/run-001.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 8439,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 8439,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 1218,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 180,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 18276,
+        "rps": 83.07219421733703,
+        "avg_ms": 0.6506380369883972,
+        "p95_ms": 0.909288,
+        "p99_ms": 1.2033402500000001,
+        "max_ms": 21.607856,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 104,
+        "cpu_percent": 3.747480130110411,
+        "peak_memory_mib": 108.3671875,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-001.cpu.pb.gz",
+      "heap_profile": "pprof/run-001.heap.pb.gz",
+      "wall_seconds": 221.13907579192892
+    },
+    {
+      "id": 2,
+      "phase": "search",
+      "vus": 20000,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T22:26:46+00:00",
+      "status": "passed",
+      "log": "run-002.log",
+      "exit_code": 0,
+      "events": "k6/run-002.events.jsonl",
+      "summary": "k6/run-002.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 110241,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 110241,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 16483,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 2152,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 239117,
+        "rps": 1494.3180662363789,
+        "avg_ms": 0.5718585900960578,
+        "p95_ms": 1.040398,
+        "p99_ms": 2.4945368399999994,
+        "max_ms": 56.72745,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 77,
+        "cpu_percent": 26.37640086375072,
+        "peak_memory_mib": 978.75,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-002.cpu.pb.gz",
+      "heap_profile": "pprof/run-002.heap.pb.gz",
+      "wall_seconds": 163.98978095897473
+    },
+    {
+      "id": 3,
+      "phase": "search",
+      "vus": 40000,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T22:30:33+00:00",
+      "status": "threshold failed",
+      "log": "run-003.log",
+      "exit_code": 99,
+      "events": "k6/run-003.events.jsonl",
+      "summary": "k6/run-003.json",
+      "thresholds": {
+        "p(95)<500": false,
+        "p(99)<1000": false,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 91661,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 86551,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 11749,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 1506,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 192192,
+        "rps": 1198.2767951904536,
+        "avg_ms": 1444.9067923115133,
+        "p95_ms": 7612.653618799979,
+        "p99_ms": 14002.890641739998,
+        "max_ms": 29398.183751,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 74,
+        "cpu_percent": 63.02121700023973,
+        "peak_memory_mib": 1155.4765625,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-003.cpu.pb.gz",
+      "heap_profile": "pprof/run-003.heap.pb.gz",
+      "wall_seconds": 168.09883625002112
+    },
+    {
+      "id": 4,
+      "phase": "refine",
+      "vus": 30000,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T22:34:26+00:00",
+      "status": "threshold failed",
+      "log": "run-004.log",
+      "exit_code": 99,
+      "events": "k6/run-004.events.jsonl",
+      "summary": "k6/run-004.json",
+      "thresholds": {
+        "p(95)<500": false,
+        "p(99)<1000": false,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 155230,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 154970,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 22748,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 3022,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 336156,
+        "rps": 2097.5697965398217,
+        "avg_ms": 329.1147780251112,
+        "p95_ms": 2293.48434125,
+        "p99_ms": 3230.79752805,
+        "max_ms": 9037.666743,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 60,
+        "cpu_percent": 56.150072847208165,
+        "peak_memory_mib": 1022.0390625,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-004.cpu.pb.gz",
+      "heap_profile": "pprof/run-004.heap.pb.gz",
+      "wall_seconds": 177.58020433306228
+    },
+    {
+      "id": 5,
+      "phase": "refine",
+      "vus": 25000,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T22:38:23+00:00",
+      "status": "threshold failed",
+      "log": "run-005.log",
+      "exit_code": 99,
+      "events": "k6/run-005.events.jsonl",
+      "summary": "k6/run-005.json",
+      "thresholds": {
+        "p(95)<500": false,
+        "p(99)<1000": false,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 132684,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 132684,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 18032,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 2417,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 285817,
+        "rps": 1785.058400887152,
+        "avg_ms": 366.0921767723156,
+        "p95_ms": 528.7038240000024,
+        "p99_ms": 11550.12771044008,
+        "max_ms": 53412.68727,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 27,
+        "cpu_percent": 39.59746461916724,
+        "peak_memory_mib": 1061.09375,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-005.cpu.pb.gz",
+      "heap_profile": "pprof/run-005.heap.pb.gz",
+      "wall_seconds": 185.91763100004755
+    },
+    {
+      "id": 6,
+      "phase": "refine",
+      "vus": 22500,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T22:42:16+00:00",
+      "status": "passed",
+      "log": "run-006.log",
+      "exit_code": 0,
+      "events": "k6/run-006.events.jsonl",
+      "summary": "k6/run-006.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 124059,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 124059,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 18370,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 2410,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 268898,
+        "rps": 1680.117483142673,
+        "avg_ms": 1.123377598565257,
+        "p95_ms": 1.6030338,
+        "p99_ms": 5.728531569999924,
+        "max_ms": 1329.178293,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 71,
+        "cpu_percent": 29.111468402236053,
+        "peak_memory_mib": 1094.1015625,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-006.cpu.pb.gz",
+      "heap_profile": "pprof/run-006.heap.pb.gz",
+      "wall_seconds": 168.38388475007378
+    },
+    {
+      "id": 7,
+      "phase": "refine",
+      "vus": 23750,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T22:46:07+00:00",
+      "status": "passed",
+      "log": "run-007.log",
+      "exit_code": 0,
+      "events": "k6/run-007.events.jsonl",
+      "summary": "k6/run-007.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 130967,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 130967,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 19588,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 2626,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 284148,
+        "rps": 1775.3387315883353,
+        "avg_ms": 0.6680941689893874,
+        "p95_ms": 1.1265126499999971,
+        "p99_ms": 3.5135452999999695,
+        "max_ms": 311.31655,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 77,
+        "cpu_percent": 30.023681532749368,
+        "peak_memory_mib": 1111.40234375,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-007.cpu.pb.gz",
+      "heap_profile": "pprof/run-007.heap.pb.gz",
+      "wall_seconds": 163.51720308302902
+    },
+    {
+      "id": 8,
+      "phase": "refine",
+      "vus": 24250,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T22:49:53+00:00",
+      "status": "passed",
+      "log": "run-008.log",
+      "exit_code": 0,
+      "events": "k6/run-008.events.jsonl",
+      "summary": "k6/run-008.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 133754,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 133754,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 19767,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 2626,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 289901,
+        "rps": 1811.2078736804594,
+        "avg_ms": 0.6257731406411285,
+        "p95_ms": 1.122642,
+        "p99_ms": 3.340436,
+        "max_ms": 71.463239,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 77,
+        "cpu_percent": 30.104402388821743,
+        "peak_memory_mib": 1119.5234375,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-008.cpu.pb.gz",
+      "heap_profile": "pprof/run-008.heap.pb.gz",
+      "wall_seconds": 163.9054289170308
+    },
+    {
+      "id": 9,
+      "phase": "refine",
+      "vus": 24500,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T22:53:40+00:00",
+      "status": "passed",
+      "log": "run-009.log",
+      "exit_code": 0,
+      "events": "k6/run-009.events.jsonl",
+      "summary": "k6/run-009.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 135035,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 135035,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 20081,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 2706,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 292857,
+        "rps": 1829.8842824374271,
+        "avg_ms": 0.6507106604110341,
+        "p95_ms": 1.1470232,
+        "p99_ms": 3.907317600000001,
+        "max_ms": 61.342437,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 77,
+        "cpu_percent": 30.395735053402216,
+        "peak_memory_mib": 1119.19140625,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-009.cpu.pb.gz",
+      "heap_profile": "pprof/run-009.heap.pb.gz",
+      "wall_seconds": 163.96371641696896
+    },
+    {
+      "id": 10,
+      "phase": "refine",
+      "vus": 24750,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T22:57:26+00:00",
+      "status": "passed",
+      "log": "run-010.log",
+      "exit_code": 0,
+      "events": "k6/run-010.events.jsonl",
+      "summary": "k6/run-010.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 136537,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 136537,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 20172,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 2672,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 295918,
+        "rps": 1848.88591888281,
+        "avg_ms": 0.6686272787630366,
+        "p95_ms": 1.1678890499999977,
+        "p99_ms": 3.967513700000005,
+        "max_ms": 66.227237,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 77,
+        "cpu_percent": 30.721516771458486,
+        "peak_memory_mib": 1125.71875,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-010.cpu.pb.gz",
+      "heap_profile": "pprof/run-010.heap.pb.gz",
+      "wall_seconds": 164.03719020809513
+    },
+    {
+      "id": 11,
+      "phase": "confirm",
+      "vus": 24750,
+      "hold_seconds": 300,
+      "started_at": "2026-10-16T23:01:13+00:00",
+      "status": "passed",
+      "log": "run-011.log",
+      "exit_code": 0,
+      "events": "k6/run-011.events.jsonl",
+      "summary": "k6/run-011.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 426199,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 426199,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 63439,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 8430,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 924267,
+        "rps": 2310.3685625610983,
+        "avg_ms": 0.699421051744809,
+        "p95_ms": 1.190921,
+        "p99_ms": 4.525473759999998,
+        "max_ms": 218.255363,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 187,
+        "cpu_percent": 36.375757707375215,
+        "peak_memory_mib": 1133.546875,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-011.cpu.pb.gz",
+      "heap_profile": "pprof/run-011.heap.pb.gz",
+      "wall_seconds": 404.204784792033
+    }
+  ],
+  "confirmed_vus": 24750,
+  "environment": {
+    "mode": "k8s",
+    "url": "http://127.0.0.1:61861",
+    "k6_url": "http://server",
+    "k6": "k6 v2.2.0 (commit/00a9a1b7f5, go1.26.5, linux/amd64)",
+    "app_probe": "container cgroup CPU, memory.current including page cache, and OOM kills",
+    "host": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "host_logical_cpus": 14,
+    "workload_sha256": "14fbbe36a7bef2cc803c8c2309b8b93d6e6ec9c2b6aba78ebe3b9a95ebf85972",
+    "settings": {
+      "url": "http://127.0.0.1:61861",
+      "tokens": null,
+      "mode": "k8s",
+      "k6": "exec",
+      "k6_bin": "k6",
+      "k6_exec": "kubectl --context admin@coruscant -n twelve-dollar-go exec k6 -c k6 --",
+      "k6_url": "http://server",
+      "docker_network": null,
+      "app_pid": null,
+      "app_exec": [
+        "kubectl --context admin@coruscant -n twelve-dollar-go exec server -c app --"
+      ],
+      "app_limits": {
+        "cpu": "1",
+        "memory": "2Gi"
+      },
+      "pprof": "127.0.0.1:6060",
+      "pprof_exec": "kubectl --context admin@coruscant -n twelve-dollar-go exec server -c app --",
+      "output": null,
+      "wait_seconds": 120,
+      "warmup_vus": 1000,
+      "warmup_seconds": 120,
+      "start_vus": 20000,
+      "max_vus": 60000,
+      "step": 250,
+      "probe_seconds": 60,
+      "confirm_seconds": 300,
+      "confirm_runs": 1,
+      "ramp_seconds": 60,
+      "budget_seconds": 7200
+    },
+    "app_limits": {
+      "cpu": "1",
+      "memory": "2Gi"
+    }
+  },
+  "message": "Search and confirmation finished."
+}

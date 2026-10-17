@@ -1,0 +1,42 @@
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✗ 'p(95)<500' p(95)=528.7ms
+    ✗ 'p(99)<1000' p(99)=11.55s
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 285817  1785.058401/s
+    checks_succeeded...: 100.00% 285817 out of 285817
+    checks_failed......: 0.00%   0 out of 285817
+
+    ✓ feed 200
+    ✓ post 200
+    ✓ like 200/201
+    ✓ create 201
+
+    HTTP
+    http_req_duration..............: avg=366.09ms med=1.68ms p(95)=528.7ms p(99)=11.55s max=53.41s
+      { expected_response:true }...: avg=366.09ms med=1.68ms p(95)=528.7ms p(99)=11.55s max=53.41s
+    http_req_failed................: 0.00%  0 out of 285817
+    http_reqs......................: 285817 1785.058401/s
+
+    EXECUTION
+    iteration_duration.............: avg=21.53s   med=21.24s p(95)=28.42s  p(99)=35.25s max=1m13s 
+    iterations.....................: 118378 739.324965/s
+    vus............................: 167    min=0           max=25000
+    vus_max........................: 25000  min=4587        max=25000
+
+    NETWORK
+    data_received..................: 537 MB 3.4 MB/s
+    data_sent......................: 26 MB  165 kB/s
+
+
+
+command terminated with exit code 99

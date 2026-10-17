@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" role="img" aria-label="Average requests per second">
+<title>Average requests per second</title>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<path d="M 75 220.0 H 735" stroke="#dbe3ec"/>
+<text x="65" y="224.0" text-anchor="end">0.00</text>
+<text x="75.0" y="242" text-anchor="middle">0</text>
+<path d="M 75 172.5 H 735" stroke="#dbe3ec"/>
+<text x="65" y="176.5" text-anchor="end">1602.40</text>
+<text x="240.0" y="242" text-anchor="middle">15000</text>
+<path d="M 75 125.0 H 735" stroke="#dbe3ec"/>
+<text x="65" y="129.0" text-anchor="end">3204.80</text>
+<text x="405.0" y="242" text-anchor="middle">30000</text>
+<path d="M 75 77.5 H 735" stroke="#dbe3ec"/>
+<text x="65" y="81.5" text-anchor="end">4807.20</text>
+<text x="570.0" y="242" text-anchor="middle">45000</text>
+<path d="M 75 30.0 H 735" stroke="#dbe3ec"/>
+<text x="65" y="34.0" text-anchor="end">6409.60</text>
+<text x="735.0" y="242" text-anchor="middle">60000</text>
+<circle cx="350.0" cy="164.7" r="4" fill="#027a48" stroke="#027a48" stroke-width="2"><title>Run 2, search, 25000 users: Requests/s 1867.08, passed</title></circle>
+<circle cx="625.0" cy="109.4" r="4" fill="#027a48" stroke="#027a48" stroke-width="2"><title>Run 3, search, 50000 users: Requests/s 3730.97, passed</title></circle>
+<circle cx="735.0" cy="87.8" r="4" fill="#027a48" stroke="#027a48" stroke-width="2"><title>Run 4, search, 60000 users: Requests/s 4459.11, passed</title></circle>
+<circle cx="735.0" cy="54.8" r="4" fill="white" stroke="#027a48" stroke-width="2"><title>Run 5, confirm, 60000 users: Requests/s 5573.56, passed</title></circle>
+<text x="75" y="271" fill="#027a48">Requests/s</text>
+<text x="325" y="271">Filled: probe. Outlined: confirmation.</text><text x="735" y="250" text-anchor="end">Virtual users</text></g></svg>

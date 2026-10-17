@@ -1,0 +1,175 @@
+{
+  "status": "execution error",
+  "runs": [
+    {
+      "id": 1,
+      "phase": "warmup",
+      "vus": 1000,
+      "hold_seconds": 120,
+      "started_at": "2026-10-16T23:39:04+00:00",
+      "status": "passed",
+      "log": "run-001.log",
+      "exit_code": 0,
+      "events": "k6/run-001.events.jsonl",
+      "summary": "k6/run-001.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 8435,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 8435,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 1269,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 158,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 18297,
+        "rps": 83.16731684557577,
+        "avg_ms": 0.35705023277039866,
+        "p95_ms": 0.5112498,
+        "p99_ms": 0.6375618800000004,
+        "max_ms": 14.632631,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 104,
+        "cpu_percent": 3.1206970750527216,
+        "peak_memory_mib": 51.15234375,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-001.cpu.pb.gz",
+      "heap_profile": "pprof/run-001.heap.pb.gz",
+      "wall_seconds": 221.1608588329982
+    },
+    {
+      "id": 2,
+      "phase": "search",
+      "vus": 60000,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T23:43:47+00:00",
+      "status": "passed",
+      "log": "run-002.log",
+      "exit_code": 0,
+      "events": "k6/run-002.events.jsonl",
+      "summary": "k6/run-002.json",
+      "thresholds": {
+        "p(95)<500": true,
+        "p(99)<1000": true,
+        "rate<0.01": true
+      },
+      "checks": {
+        "feed 200": {
+          "passed": 330744,
+          "failed": 0
+        },
+        "post 200": {
+          "passed": 330744,
+          "failed": 0
+        },
+        "like 200/201": {
+          "passed": 49314,
+          "failed": 0
+        },
+        "create 201": {
+          "passed": 6542,
+          "failed": 0
+        }
+      },
+      "metrics": {
+        "requests": 717344,
+        "rps": 4481.002637683043,
+        "avg_ms": 1.9889222197244125,
+        "p95_ms": 6.861486199999989,
+        "p99_ms": 39.87199025999978,
+        "max_ms": 378.109229,
+        "error_percent": 0
+      },
+      "resources": {
+        "source": "container cgroup CPU, memory.current including page cache, and OOM kills",
+        "samples": 79,
+        "cpu_percent": 45.58838059909191,
+        "peak_memory_mib": 1579.38671875,
+        "oom_kills": 0
+      },
+      "cpu_profile": "pprof/run-002.cpu.pb.gz",
+      "heap_profile": "pprof/run-002.heap.pb.gz",
+      "wall_seconds": 166.64236075000372
+    },
+    {
+      "id": 3,
+      "phase": "search",
+      "vus": 80000,
+      "hold_seconds": 60,
+      "started_at": "2026-10-16T23:47:37+00:00",
+      "status": "execution error",
+      "log": "run-003.log",
+      "exit_code": 137,
+      "error": "k6 was killed (exit 137), usually because it ran out of memory. Give k6 more memory (in Docker mode, BENCH_K6=local) or lower BENCH_MAX_VUS.",
+      "cpu_profile": "pprof/run-003.cpu.pb.gz",
+      "heap_profile": "pprof/run-003.heap.pb.gz",
+      "wall_seconds": 134.43416804203298
+    }
+  ],
+  "confirmed_vus": null,
+  "environment": {
+    "mode": "k8s",
+    "url": "http://127.0.0.1:57430",
+    "k6_url": "http://server",
+    "k6": "k6 v2.2.0 (commit/00a9a1b7f5, go1.26.5, linux/amd64)",
+    "app_probe": "container cgroup CPU, memory.current including page cache, and OOM kills",
+    "host": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "host_logical_cpus": 14,
+    "workload_sha256": "14fbbe36a7bef2cc803c8c2309b8b93d6e6ec9c2b6aba78ebe3b9a95ebf85972",
+    "settings": {
+      "url": "http://127.0.0.1:57430",
+      "tokens": null,
+      "mode": "k8s",
+      "k6": "exec",
+      "k6_bin": "k6",
+      "k6_exec": "kubectl --context admin@coruscant -n twelve-dollar-go exec k6 -c k6 --",
+      "k6_url": "http://server",
+      "docker_network": null,
+      "app_pid": null,
+      "app_exec": [
+        "kubectl --context admin@coruscant -n twelve-dollar-go exec server -c app --"
+      ],
+      "app_limits": {
+        "cpu": "1",
+        "memory": "2Gi"
+      },
+      "pprof": "127.0.0.1:6060",
+      "pprof_exec": "kubectl --context admin@coruscant -n twelve-dollar-go exec server -c app --",
+      "output": null,
+      "wait_seconds": 120,
+      "warmup_vus": 1000,
+      "warmup_seconds": 120,
+      "start_vus": 60000,
+      "max_vus": 80000,
+      "step": 250,
+      "probe_seconds": 60,
+      "confirm_seconds": 300,
+      "confirm_runs": 1,
+      "ramp_seconds": 60,
+      "budget_seconds": 3600
+    },
+    "app_limits": {
+      "cpu": "1",
+      "memory": "2Gi"
+    }
+  },
+  "message": "k6 was killed (exit 137), usually because it ran out of memory. Give k6 more memory (in Docker mode, BENCH_K6=local) or lower BENCH_MAX_VUS."
+}

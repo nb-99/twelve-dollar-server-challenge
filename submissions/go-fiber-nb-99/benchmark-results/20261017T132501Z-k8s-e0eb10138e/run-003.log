@@ -1,0 +1,42 @@
+command terminated with exit code 137
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✓ 'p(95)<500' p(95)=140.13ms
+    ✓ 'p(99)<1000' p(99)=459.85ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 477237  2981.723984/s
+    checks_succeeded...: 100.00% 477237 out of 477237
+    checks_failed......: 0.00%   0 out of 477237
+
+    ✓ feed 200
+    ✓ post 200
+    ✓ like 200/201
+    ✓ create 201
+
+    HTTP
+    http_req_duration..............: avg=27.21ms med=1.56ms p(95)=140.13ms p(99)=459.85ms max=2.64s 
+      { expected_response:true }...: avg=27.21ms med=1.56ms p(95)=140.13ms p(99)=459.85ms max=2.64s 
+    http_req_failed................: 0.00%  0 out of 477237
+    http_reqs......................: 477237 2981.723984/s
+
+    EXECUTION
+    iteration_duration.............: avg=20.94s  med=20.88s p(95)=26.96s   p(99)=29.22s   max=33.97s
+    iterations.....................: 199605 1247.10996/s
+    vus............................: 116    min=0           max=40000
+    vus_max........................: 40000  min=12429       max=40000
+
+    NETWORK
+    data_received..................: 894 MB 5.6 MB/s
+    data_sent......................: 44 MB  274 kB/s
+
+
+

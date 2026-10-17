@@ -1,0 +1,41 @@
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✓ 'p(95)<500' p(95)=1.14ms
+    ✓ 'p(99)<1000' p(99)=3.9ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 292857  1829.884282/s
+    checks_succeeded...: 100.00% 292857 out of 292857
+    checks_failed......: 0.00%   0 out of 292857
+
+    ✓ feed 200
+    ✓ post 200
+    ✓ create 201
+    ✓ like 200/201
+
+    HTTP
+    http_req_duration..............: avg=650.71µs med=443.8µs p(95)=1.14ms p(99)=3.9ms  max=61.34ms
+      { expected_response:true }...: avg=650.71µs med=443.8µs p(95)=1.14ms p(99)=3.9ms  max=61.34ms
+    http_req_failed................: 0.00%  0 out of 292857
+    http_reqs......................: 292857 1829.884282/s
+
+    EXECUTION
+    iteration_duration.............: avg=20.89s   med=20.87s  p(95)=26.9s  p(99)=29.18s max=33.96s 
+    iterations.....................: 122494 765.390089/s
+    vus............................: 0      min=0           max=24500
+    vus_max........................: 24500  min=12640       max=24500
+
+    NETWORK
+    data_received..................: 547 MB 3.4 MB/s
+    data_sent......................: 27 MB  168 kB/s
+
+
+
