@@ -1,0 +1,117 @@
+# Load generators. For each run, benchmark.py starts k6 in every pod through
+# kubectl exec, and each pod runs an equal share of the users (a k6 execution
+# segment). Their inputs come from the seed image, because kubectl exec stdin
+# uploads proved unreliable.
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: k6
+spec:
+  # Each pod connects from its own IP address, so each can hold about 64,000
+  # connections to the server, one per local port. Three pods at the memory
+  # below cover 80,000 users. K8S_K6_PODS overrides the count.
+  replicas: 3
+  podManagementPolicy: Parallel
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: k6
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: k6
+    spec:
+      # sleep ignores SIGTERM as PID 1.
+      terminationGracePeriodSeconds: 0
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            # No app pod of any benchmark namespace shares a node with k6, so
+            # parallel runs in separate namespaces measure separate machines.
+            # The part-of label keeps other workloads' "server" pods out of it.
+            - topologyKey: kubernetes.io/hostname
+              namespaceSelector: {}
+              labelSelector:
+                matchExpressions:
+                  - key: app.kubernetes.io/name
+                    operator: In
+                    values: [server]
+                  - key: app.kubernetes.io/part-of
+                    operator: In
+                    values: [twelve-dollar-go, twelve-dollar-java]
+      securityContext:
+        runAsNonRoot: true
+        # The k6 image's user, so both containers can use /work.
+        runAsUser: 12345
+        runAsGroup: 12345
+        seccompProfile:
+          type: RuntimeDefault
+        # One source port per user; the default range is about 28,000 ports.
+        sysctls:
+          - name: net.ipv4.ip_local_port_range
+            value: "1024 65535"
+      initContainers:
+        # The seed is deterministic, so these tokens match the server's database.
+        - name: inputs
+          image: twelve-dollar-go-seed
+          env:
+            # Every k6 process numbers its users from 1, and load.js gives user
+            # i the token at index i - 1. So pod k of n starts its token list
+            # k/n of the way in, and the pods together use as many distinct
+            # users as one process would.
+            - name: K6_POD
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.labels['apps.kubernetes.io/pod-index']
+            # Equal to replicas; K8S_K6_PODS sets both.
+            - name: K6_PODS
+              value: "3"
+          command:
+            - bash
+            - -c
+            - >-
+              node /challenge/seed/generate.mjs /tmp/seed >/dev/null &&
+              mkdir /work/results &&
+              cp /challenge/bench/load.js /work/ &&
+              node -e 'const fs = require("fs");
+              const tokens = JSON.parse(fs.readFileSync("/tmp/seed/tokens.json"));
+              const start = Math.floor(tokens.length * process.env.K6_POD / process.env.K6_PODS);
+              fs.writeFileSync("/work/tokens.json",
+              JSON.stringify([...tokens.slice(start), ...tokens.slice(0, start)]));'
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+          volumeMounts:
+            - name: work
+              mountPath: /work
+      containers:
+        - name: k6
+          # Keep in sync with K6_IMAGE in benchmark.py.
+          image: grafana/k6:2.2.0@sha256:9bd01d6941fca969cb61bb57d2da5ee9b385fe2aa8881df3798c196564d6ace6
+          command: ["sleep", "infinity"]
+          # k6 2.2 used about 310 KiB per user with bench/load.js (11.9 GiB at
+          # 40,000), so 10 GiB holds about 30,000 users. The request equals the
+          # limit, so a pod lands only where that memory is free; with a smaller
+          # request, k6 once exhausted a node's memory before reaching its own
+          # limit.
+          # k6 used about 0.6 cores at 25,000 users, so it requests half a core
+          # and may burst to 6, leaving the node's own workloads some cores.
+          # K8S_K6_CPU_REQUEST, K8S_K6_CPU (limit), and K8S_K6_MEMORY (request
+          # and limit) override them.
+          resources:
+            requests:
+              cpu: 500m
+              memory: 10Gi
+            limits:
+              cpu: "6"
+              memory: 10Gi
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+          volumeMounts:
+            - name: work
+              mountPath: /work
+      volumes:
+        - name: work
+          emptyDir: {}

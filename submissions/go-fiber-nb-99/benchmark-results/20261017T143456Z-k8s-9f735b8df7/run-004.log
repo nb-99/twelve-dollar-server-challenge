@@ -1,0 +1,126 @@
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✓ 'p(95)<500' p(95)=497.34ms
+    ✗ 'p(99)<1000' p(99)=1.26s
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 986936  2466.9758/s
+    checks_succeeded...: 100.00% 986936 out of 986936
+    checks_failed......: 0.00%   0 out of 986936
+
+    ✓ feed 200
+    ✓ post 200
+    ✓ like 200/201
+    ✓ create 201
+
+    HTTP
+    http_req_duration..............: avg=91.36ms med=12.92ms p(95)=497.34ms p(99)=1.26s  max=5.61s 
+      { expected_response:true }...: avg=91.36ms med=12.92ms p(95)=497.34ms p(99)=1.26s  max=5.61s 
+    http_req_failed................: 0.00%  0 out of 986936
+    http_reqs......................: 986936 2466.9758/s
+
+    EXECUTION
+    iteration_duration.............: avg=20.82s  med=20.8s   p(95)=26.56s   p(99)=28.41s max=33.77s
+    iterations.....................: 441191 1102.814691/s
+    vus............................: 40     min=0           max=26667
+    vus_max........................: 26667  min=9426        max=26667
+
+    NETWORK
+    data_received..................: 1.9 GB 4.6 MB/s
+    data_sent......................: 91 MB  227 kB/s
+
+
+
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✗ 'p(95)<500' p(95)=507.43ms
+    ✗ 'p(99)<1000' p(99)=1.27s
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 986530  2466.024769/s
+    checks_succeeded...: 100.00% 986530 out of 986530
+    checks_failed......: 0.00%   0 out of 986530
+
+    ✓ feed 200
+    ✓ post 200
+    ✓ like 200/201
+    ✓ create 201
+
+    HTTP
+    http_req_duration..............: avg=94.23ms med=14.31ms p(95)=507.43ms p(99)=1.27s  max=5.26s 
+      { expected_response:true }...: avg=94.23ms med=14.31ms p(95)=507.43ms p(99)=1.27s  max=5.26s 
+    http_req_failed................: 0.00%  0 out of 986530
+    http_reqs......................: 986530 2466.024769/s
+
+    EXECUTION
+    iteration_duration.............: avg=20.82s  med=20.81s  p(95)=26.57s   p(99)=28.43s max=34.45s
+    iterations.....................: 441018 1102.410785/s
+    vus............................: 138    min=0           max=26667
+    vus_max........................: 26667  min=8371        max=26667
+
+    NETWORK
+    data_received..................: 1.9 GB 4.6 MB/s
+    data_sent......................: 91 MB  227 kB/s
+
+
+
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✗ 'p(95)<500' p(95)=505.94ms
+    ✗ 'p(99)<1000' p(99)=1.27s
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 986625  2466.347056/s
+    checks_succeeded...: 100.00% 986625 out of 986625
+    checks_failed......: 0.00%   0 out of 986625
+
+    ✓ feed 200
+    ✓ post 200
+    ✓ like 200/201
+    ✓ create 201
+
+    HTTP
+    http_req_duration..............: avg=94.27ms med=14.36ms p(95)=505.94ms p(99)=1.27s  max=4.92s 
+      { expected_response:true }...: avg=94.27ms med=14.36ms p(95)=505.94ms p(99)=1.27s  max=4.92s 
+    http_req_failed................: 0.00%  0 out of 986625
+    http_reqs......................: 986625 2466.347056/s
+
+    EXECUTION
+    iteration_duration.............: avg=20.82s  med=20.81s  p(95)=26.57s   p(99)=28.43s max=33.86s
+    iterations.....................: 441029 1102.476195/s
+    vus............................: 308    min=0           max=26666
+    vus_max........................: 26666  min=6376        max=26666
+
+    NETWORK
+    data_received..................: 1.9 GB 4.6 MB/s
+    data_sent......................: 91 MB  227 kB/s
+
+
+
+command terminated with exit code 99
+command terminated with exit code 99
+command terminated with exit code 99
